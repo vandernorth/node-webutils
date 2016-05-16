@@ -1,0 +1,30 @@
+{
+  "name"           : "vdn-utils",
+  "author"         : "Jeffrey <jeffreyvannorden@gmail.com>",
+  "description"    : "Something of everything",
+  "version"        : "1.0.0",
+  "contributors"   : [
+    {
+      "name" : "Jeffrey van Norden",
+      "email": "jeffrey@grexx.net"
+    }
+  ],
+  "scripts"        : {
+    "start": "node bin/index.js"
+  },
+  "main"           : "bin/index.js",
+  "repository"     : {
+    "type": "git",
+    "url" : "git://bitbucket.org/grexxboxx/atalanta-grexxconnect.git"
+  },
+  "dependencies"   : {
+    "express"             : "^4",
+    "lodash"              : "^4",
+    "moment"              : "^2",
+    "yargs"               : "^3"
+  },
+  "license"        : "MIT",
+  "engines"        : {
+    "node": ">=4.1.2"
+  }
+}
