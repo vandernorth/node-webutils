@@ -20,9 +20,11 @@ router.get('/:account', ( req, res ) => {
         .then(list => {
             let page = cheerio.load(list);
             page('body').replaceWith(`<section class="search-results-table table">${page('.search-results-table').html()}</section>`);
+            res.contentType('text/html');
             res.end(page.html());
         })
         .catch(error => {
+            res.contentType('text/html');
             res.end(`<!-- Error: ${error}-->`);
         });
 });
