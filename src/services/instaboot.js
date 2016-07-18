@@ -1,11 +1,11 @@
-/*! Copyright (C) Grexx - All Rights Reserved
+/*! Copyright (C) VanDerNorth - All Rights Reserved
  * Unauthorized copying of this file, via any medium is strictly prohibited
  * Proprietary and Confidential
  */
 
 /**
  * @fileOverview
- * @author Jeffrey van Norden | Grexx <jeffrey@grexx.net>
+ * @author Jeffrey van Norden | Grexx <info@vandernorth.net>
  */
 
 "use strict";
