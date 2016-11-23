@@ -40,7 +40,7 @@ router.get('/:account', ( req, res ) => {
         })
         .catch(error=> {
             console.error('FeedError', error);
-            res.end('<!-- Error while reading feed -->');
+            res.end('<!-- Error while reading instagram feed -->');
         })
 });
 
