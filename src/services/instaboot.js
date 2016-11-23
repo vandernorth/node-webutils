@@ -18,6 +18,7 @@ router.get('/:account', ( req, res ) => {
     getFeed(req.params.account)
         .then(feed => {
             var images = _.map(feed.items, i => {
+                    i.caption = i.caption || { text: "#taxithor" };
                     return ` <a href="${i.link}" target="_blank" class="">
                                 <img src="${i.images.thumbnail.url}" alt="${i.caption.text}" title="${i.caption.text}">
                             </a>`
