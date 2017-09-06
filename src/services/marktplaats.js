@@ -10,7 +10,7 @@
 
 "use strict";
 const _       = require('lodash'),
-      http    = require('http'),
+      http    = require('https'),
       cheerio = require('cheerio'),
       express = require('express');
 let router    = express.Router();
@@ -32,7 +32,7 @@ router.get('/:account', ( req, res ) => {
 function getList( account ) {
     return new Promise(( resolve, reject )=> {
         account = 18756775;
-        http.get(`http://www.marktplaats.nl/verkopers/${account}.html?view=lr`, ( res ) => {
+        http.get(`https://www.marktplaats.nl/verkopers/${account}.html?view=lr`, ( res ) => {
             let stringData = '';
             res.on('data', ( d ) => stringData += d);
             res.on('end', () => resolve(stringData));
